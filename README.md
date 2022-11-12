@@ -6,7 +6,7 @@
 
 ## Resultados
 
-Verifique os resultados obtidos [AQUI] (https://drive.google.com/drive/u/1/folders/1PISZtUB6TjI5krvNnnQtpTtU1Wg7sSSy)
+Verifique os resultados obtidos [AQUI](https://drive.google.com/drive/u/1/folders/1PISZtUB6TjI5krvNnnQtpTtU1Wg7sSSy)
 
 ### Ajustes e melhorias
 
@@ -31,7 +31,7 @@ Para executar, siga estas etapas:
 <npm start>
 ```
 
-## ☕ Usando <nome_do_projeto>
+## ☕ Usando
 
 Para utilizar, acesse no browser:
 
@@ -58,4 +58,4 @@ Orientador:
 
 ## 😄 Dê continuidade nesse projeto...<br>
 
-Quer fazer parte desse projeto? Entre em contato: [Wesley Angelino de Souza] (https://www.linkedin.com/in/wesley-angelino-de-souza-00664033/)
+Quer fazer parte desse projeto? Entre em contato: [Wesley Angelino de Souza](https://www.linkedin.com/in/wesley-angelino-de-souza-00664033/)
