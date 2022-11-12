@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 75vw;
+    height: 75vh;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+}
+
+.canvas {
+
+    /*background: url("../img/interface.jpg") no-repeat;*/
+    background-position: center;
+    background-size: 100% 100%;
+    /*width: 2592px;
+    height: 1944px;*/
+}

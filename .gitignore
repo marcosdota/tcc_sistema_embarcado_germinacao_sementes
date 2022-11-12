@@ -1,0 +1,5 @@
+node_modules
+views/img/*
+!/**/.gitkeep
+/data
+/python/__pycache__/

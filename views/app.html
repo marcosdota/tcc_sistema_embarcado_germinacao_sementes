@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/input.css">
+    <title>Interface Gráfica Web</title>
+</head>
+
+<body>
+    <div class="containerInput">
+        <h2>INTERFACE GRÁFICA SISTEMA EMBARCADO DE MONITORAMENTO DE GERMINAÇÃO DE SEMENTES EM BANDEJA<small>Dados
+                bandeja de células</small></h2>
+        <form>
+            <div class="group">
+                <input type="number" name="numCelHoriz" id="numCelHoriz" min="1" max="1000" step="1" value="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Número de células na horizontal</label>
+            </div>
+            <div class="group">
+                <input type="number" name="numCelVert" id="numCelVert" min="1" max="1000" step="1" value="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Número de células na vertical</label>
+            </div>
+            <div class="group">
+                <input type="number" name="posX" id="posX" min="0" max="2560" step="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Posição X inicial (abscissa) (px)</label>
+            </div>
+            <div class="group">
+                <input type="number" name="posY" id="posY" min="0" max="1920" step="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Posição Y inicial (ordenada) (px)</label>
+            </div>
+            <div class="group">
+                <input type="number" name="comprimentoCel" id="comprimentoCel" min="1" max="2560" step="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Comprimento da célula (abscissa) (px):</label>
+            </div>
+            <div class="group">
+                <input type="number" name="larguraCel" id="larguraCel" min="0" max="1920" step="1" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Largura da célula (ordenada) (px):</label>
+            </div>
+            <div class="group">
+                <button id="capturarFoto" onclick="capturaFoto(event)">Capturar Foto</button>
+                <button id="desenharCelulas" onclick="desenhaCelulas(event)">Atualizar Interface</button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="wrapper">
+            <canvas id="canvas" class="canvas" width="2560" height="1920"></canvas>
+        </div>
+    </div>
+
+    <div class="containerInput">
+        <form>
+            <div class="group">
+                <input type="number" name="ref_csmsS" id="ref_csmsS" min="0" step="1" value="0" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Referência sensor capacitivo de umidade do solo [solo seco]:</label>
+                <button id="aquisitarValor0" onclick="refSCUS(event, 0)">Aquisitar Valor do Sensor</button>
+            </div>
+            <div class="group">
+                <input type="number" name="ref_csmsU" id="ref_csmsU" min="0" step="1" value="0" required>
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Referência sensor capacitivo de umidade do solo [solo úmido]:</label>
+                <button id="aquisitarValor1" onclick="refSCUS(event, 1)">Aquisitar Valor do Sensor</button>
+            </div>          
+            <div class="group">
+                <button id="iniciar" onclick="start(event)">Iniciar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script src="js/app.js"></script>
+<script src="js/axios.min.js"></script>
+
+</html>
